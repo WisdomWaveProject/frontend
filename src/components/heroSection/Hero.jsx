@@ -1,13 +1,11 @@
 import React from "react";
-
+import hero from "../../assets/hero.png";
 const Hero = () => {
-    
   return (
-    
     <div>
       <section className="bg-white p-3 dark:bg-gray-900">
         <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-2">
-        <div className="place-self-center">
+          <div className="place-self-center">
             <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
               Learn and grow with help from world-class mentors for free
             </h1>
@@ -17,20 +15,19 @@ const Hero = () => {
             </p>
           </div>
           {/* <!-- Hero image --> */}
-          <div className=" ms-8ml-25 place-self-center ">
+          <div className=" ms-8ml-25 place-self-center  dark:bg-gray-100">
             <img
-            style={{marginLeft:"25%"}}
-             className="w-1/2 h-auto  !important rounded-full"
-              src="https://imgs.search.brave.com/GFMcgmEbEiMkkfkoH8_QXyA5wMOD2Jk-gg7_IhWvfLI/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5ucHIub3JnL2Fz/c2V0cy9pbWcvMjAy/MC8wOC8zMS9ucHJf/bWVudG9yX3Nwb3Qx/X3NxLWFmNDM1NGJj/ZWNhZmYzMWIwYzkw/ZGZiMWNlNTBhMzFh/Njg3NTk2MGYtczEx/MDAtYzUwLmpwZw"
+              className="w-full h-auto  !important "
+              src={hero}
               alt="imghero"
             />
           </div>
         </div>
       </section>
-      <div style={{ width: "40%", marginTop: "-101px", marginLeft: "144px" }}>
+      <div style={{ width: "40%", marginTop: "-101px", marginLeft: "100px" }}>
         <form
           action="#"
-          className="gap-2 flex p-2 mt-8 w-full bg-white rounded lg:gap-x-4 lg:grid-cols-9 lg:mt-12 dark:bg-gray-800"
+          className="gap-2 flex p-1 mt-8 w-full bg-white rounded lg:gap-x-4 lg:grid-cols-9 lg:mt-12 dark:bg-gray-800"
         >
           <div className="lg:col-span-3">
             <label htmlFor="location-form" className="sr-only">
@@ -67,7 +64,7 @@ const Hero = () => {
               id="Expertise"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
             >
-              <option>Add guests</option>
+              <option>Expertise</option>
               <option>1</option>
               <option>2</option>
               <option>3</option>
@@ -83,7 +80,7 @@ const Hero = () => {
               id="guests"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
             >
-              <option>Add guests</option>
+              <option>Country</option>
               <option>1</option>
               <option>2</option>
               <option>3</option>
@@ -91,9 +88,10 @@ const Hero = () => {
               <option>5+</option>
             </select>
           </div>
+        
           <button
             type="submit"
-            className="lg:col-span-2 justify-center md:w-auto text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 inline-flex items-center"
+            className="text-white bg-gradient-to-br from-pink-500 to-orange-400 p-4 hover:bg-gradient-to-bl lg:col-span-2 justify-center md:w-auto text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 inline-flex items-center"
           >
             <svg
               className="mr-2 -ml-1 w-5 h-5"

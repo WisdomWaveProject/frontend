@@ -65,6 +65,7 @@ module.exports = {
           "Noto Color Emoji",
         ],
       },
+      
     },
     extend: {
       width: {
